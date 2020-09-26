@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'django_summernote',
-    'blog_app'
+    'blog_app',
+    'accounts',
+    'djoser',
 ]
 
 MIDDLEWARE = [
@@ -153,3 +155,5 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 SUMMERNOTE_THEME = 'bs4'
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+AUTH_USER_MODEL = 'accounts.UserAccount'
