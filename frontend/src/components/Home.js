@@ -13,10 +13,10 @@ const Home = ({isAuthenticated}) => {
         <Fragment>
             <p><b>Please login to view the blogs</b></p>
             <p className="mt-3">
-                <Link exact to = '/login'>Login</Link>
+                <Link className='btn btn-secondary btn-lg' role='button' to = '/login'>Login</Link>
             </p>
             <p>
-                <Link exact to = '/signup'>Sign Up</Link>
+                <Link className='btn btn-secondary btn-lg' role='button' to = '/signup'>Sign Up</Link>
             </p>
         </Fragment>
     )
